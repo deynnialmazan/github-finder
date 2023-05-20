@@ -45,7 +45,7 @@ function Search ({ onUserFetch }) {
             placeholder='Enter a GitHub username'
           />
           <input 
-            type="submit" value="Submit"/>
+            type="submit" value="Search"/>
         </form>
         <div className='message'>
           {notFound && <p>User not found.Try again.</p>}
