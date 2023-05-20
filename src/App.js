@@ -16,21 +16,19 @@ function App() {
 
 
   return (
-      <>
-        <Routes>
-          <Route
-            exact
-            path="/github-finder"
-            element={ <Search onUserFetch={handleUserFetch} />}
-          />
-          <Route
-            exact
-            path="/github-finder/user/:username"
-            element={<User user={user} />}
+    <>
+      <Routes>
+        <Route
+          exact path="/github-finder"
+          element={ <Search onUserFetch={handleUserFetch} />}
+        />
+        <Route
+          exact path="/github-finder/user/:username"
+          element={<User user={user} />}
           />
         </Routes>
     </>
-  );
-}
+  )
+};
 
 export default App;
